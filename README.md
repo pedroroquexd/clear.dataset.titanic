@@ -22,23 +22,27 @@ O conjunto de dados do Titanic contém informações sobre os passageiros do nav
 ## 🛠️ Tecnologias utilizadas
 
 - **Python** – Para manipulação e análise dos dados
-- **Pandas** – Para tratamento de dados
-- **NumPy** – Para operações numéricas
-- **Matplotlib/Seaborn** – Para visualização de dados
+- **Pandas** – Para tratamento de dados e geração de visualizações simples
 
 ## 🚀 Etapas do projeto
 
 1. **Importação dos dados:** Carregar o dataset para análise.
-2. **Análise exploratória (EDA):** Identificação de padrões e estatísticas descritivas.
-3. **Tratamento de dados faltantes:** Estratégias de imputação e remoção.
-4. **Correção de inconsistências:** Verificação de valores duplicados e formatos incorretos.
-5. **Transformação de dados:** Normalização e criação de novas variáveis.
-6. **Visualização de dados:** Gráficos e insights visuais.
+2. **Análise exploratória (EDA):**
+   - Criação de boxplots para identificar outliers.
+   - Análise de histogramas para entender distribuições.
+   - Uso de `groupby` para sumarizar os dados por categorias.
+3. **Tratamento de dados faltantes:**
+   - Uso de `fillna` para preenchimento de valores ausentes.
+   - Exclusão de registros irrelevantes com `drop`.
+4. **Cálculo de estatísticas descritivas:**
+   - Determinação da mediana para variáveis numéricas relevantes.
+5. **Transformação de dados:** Aplicação de funções com `transform` para ajustes e normalizações.
+6. **Visualização de dados:**
+   - Análise gráfica com `plot.hist` e boxplots.
 7. **Conclusões finais:** Resumo das descobertas e próximos passos.
 
 ## 📊 Insights esperados
 
 - Fatores que influenciaram a sobrevivência dos passageiros.
 - Distribuição demográfica dos passageiros por classe.
-- Análise de preços de tarifas por classe e porto de embarque.
-
+- Análise das tarifas e sua relação com classes e portos de embarque.
